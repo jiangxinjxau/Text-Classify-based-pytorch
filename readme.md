@@ -24,7 +24,7 @@ list列表中是传入的商品类别（如手机、电脑），其中getData的
 
 运行JD.py，爬取下来的文件存在data/目录下。之后运行ProcessData.py将原始数据集文件进行划分，按8：1：1的比例划分为训练集、数据集和测试集，并将划分后的数据集以csv格式存在dataset/目录下。
 
-![pic_1](imgs\pic_1.jpg)
+![pic_1](https://github.com/NTDXYG/Text-Classify-based-pytorch/blob/master/imgs/pic_1.jpg)
 
 ## 2、TorchText使用
 
@@ -63,7 +63,7 @@ LABEL = data.Field(sequential=False,
 模型都直接定义在model/目录下，在forward最后返回的out的形状应该是[batch size, num_classes]这样的。
 
 ## 4、训练
-![pic_1](imgs\pic_2.png)
+![pic_1](https://github.com/NTDXYG/Text-Classify-based-pytorch/blob/master/imgs/pic_2.png)
 
 修改完train.py中上述2处直接run就行，训练好的模型将保存在done_model/目录下，默认epoch为10。
 
